@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx --yes create-vite@latest . --template react-ts)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Skill(skill-creator)",
+      "Bash(python:*)",
+      "Bash(firebase --version:*)",
+      "Bash(firebase projects:list:*)",
+      "Bash(firebase projects:create:*)",
+      "Bash(firebase use:*)",
+      "Bash(firebase apps:create:*)",
+      "Bash(firebase apps:sdkconfig:*)",
+      "Bash(firebase firestore:databases:create:*)",
+      "Bash(gcloud services enable:*)",
+      "Bash(winget:*)",
+      "Bash(choco:*)",
+      "Bash(\"$LOCALAPPDATA/Google/Cloud SDK/google-cloud-sdk/bin/gcloud\" --version)",
+      "Bash(cmd /c \"C:\\\\Users\\\\ma235\\\\AppData\\\\Local\\\\Google\\\\Cloud SDK\\\\google-cloud-sdk\\\\bin\\\\gcloud.cmd\" --version)",
+      "Bash(powershell -Command \"& 'C:\\\\\\\\Users\\\\\\\\ma235\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Google\\\\\\\\Cloud SDK\\\\\\\\google-cloud-sdk\\\\\\\\bin\\\\\\\\gcloud.ps1' --version\":*)",
+      "Bash(powershell -Command:*)",
+      "Bash(firebase login:list:*)",
+      "Bash(firebase deploy:*)",
+      "Bash(node seed-data.js:*)",
+      "Bash(node seed-products.js:*)",
+      "Bash(npx:*)",
+      "Bash(npm install:*)",
+      "Bash(firebase apps:list:*)",
+      "Skill(frontend-design)",
+      "Bash(npm run lint)",
+      "Bash(cat:*)",
+      "Skill(github-update)",
+      "Bash(gh auth status:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

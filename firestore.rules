@@ -1,0 +1,50 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 認証ヘルパー関数
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // 商品: 誰でも読取可、管理者のみ書込可（在庫更新はCloud Functionsで実行）
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // 予約: 作成は誰でも可、読取・更新・削除は管理者のみ
+    match /reservations/{reservationId} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // 顧客: 作成・更新は誰でも可（予約時に自動作成/更新）、読取・削除は管理者のみ
+    match /customers/{customerId} {
+      allow create, update: if true;
+      allow read, delete: if isAdmin();
+    }
+
+    // 営業日設定: 誰でも読取可、管理者のみ書込可
+    match /businessDays/{monthId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // 店舗設定: 誰でも読取可、管理者のみ書込可
+    match /settings/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // 管理者: 管理者のみアクセス可
+    match /admins/{adminId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+  }
+}
