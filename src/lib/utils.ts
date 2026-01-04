@@ -49,7 +49,8 @@ export function getNextBusinessDays(count: number = 10): Date[] {
 }
 
 // デフォルトの時間帯を生成（1時間刻み）
-export function generateDefaultTimeSlots(startHour: number = 10, endHour: number = 17): string[] {
+// 11:00-17:00 の6枠: 11:00-12:00, 12:00-13:00, 13:00-14:00, 14:00-15:00, 15:00-16:00, 16:00-17:00
+export function generateDefaultTimeSlots(startHour: number = 11, endHour: number = 17): string[] {
   const slots: string[] = []
   for (let hour = startHour; hour < endHour; hour++) {
     const start = `${hour.toString().padStart(2, '0')}:00`

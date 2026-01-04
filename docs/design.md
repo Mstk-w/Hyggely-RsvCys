@@ -17,6 +17,8 @@
 | クライアント | Hyggely（カンパーニュ専門店） |
 | 所在地 | 愛知県みよし市三好丘緑2-10-4 |
 | 営業日 | 水曜日・土曜日（臨時休業/営業あり） |
+| 本番URL | https://hyggely-reservation.web.app/ |
+| 管理画面URL | https://hyggely-reservation.web.app/admin/login |
 
 ## 1.2 システム目的
 

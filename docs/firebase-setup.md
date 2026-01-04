@@ -331,7 +331,7 @@ Firebase Console > Firestore > 「コレクションを開始」
   - address: "愛知県みよし市三好丘緑2-10-4" (string)
   - phone: "0561-XX-XXXX" (string)
   - email: "info@hyggely.com" (string)
-  - defaultTimeSlots: ["10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00", "15:00-16:00", "16:00-17:00"] (array)
+  - defaultTimeSlots: ["11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00", "15:00-16:00", "16:00-17:00"] (array)
   - regularBusinessDays: [3, 6] (array) // 水曜=3, 土曜=6
 ```
 

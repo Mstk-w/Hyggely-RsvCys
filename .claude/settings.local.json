@@ -34,7 +34,14 @@
       "Skill(github-update)",
       "Bash(gh auth status:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Hyggely事前受取予約システム初期リリース\n\n- React + TypeScript + Viteによるフロントエンド\n- Firebase \\(Firestore, Auth, Storage, Functions, Hosting\\)\n- 予約フォーム（商品選択、日時選択、顧客情報、確認）\n- 管理画面（ダッシュボード、予約管理、商品管理、顧客管理、設定）\n- Cloud Functionsによるトランザクション処理・メール送信\n- Tailwind CSSによるレスポンシブデザイン\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(gh repo create:*)",
+      "Skill(firebase-deploy)",
+      "Bash(gcloud projects add-iam-policy-binding:*)",
+      "Bash(where:*)",
+      "Bash(curl:*)"
     ]
   }
 }
