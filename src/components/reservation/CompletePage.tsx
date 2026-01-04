@@ -101,7 +101,7 @@ export default function CompletePage() {
       <div className="text-center pt-4">
         <Link 
           to="/" 
-          onClick={reset}
+          onClick={() => reset()}
           className="btn-primary inline-flex items-center gap-2"
         >
           <Home className="h-5 w-5" />
