@@ -16,8 +16,8 @@ export default function DateTimeSelection() {
   // Get next 10 business days (Wednesday and Saturday)
   const businessDays = useMemo(() => getNextBusinessDays(10), [])
 
-  // Generate time slots (10:00-17:00, 1 hour increments)
-  const timeSlots = useMemo(() => generateDefaultTimeSlots(10, 17), [])
+  // Generate time slots (11:00-17:00, 1 hour increments)
+  const timeSlots = useMemo(() => generateDefaultTimeSlots(), [])
 
   const handleDateSelect = (date: Date) => {
     setSelectedDate(date)

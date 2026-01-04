@@ -41,7 +41,9 @@
       "Skill(firebase-deploy)",
       "Bash(gcloud projects add-iam-policy-binding:*)",
       "Bash(where:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ]
   }
 }
